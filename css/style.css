@@ -1,0 +1,99 @@
+/* generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* header */
+header {
+    height: 66vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header section {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#jumbotron {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+#logo-header {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    cursor: pointer;
+}
+
+header nav {
+    position: absolute;
+    top: 25px;
+    left: 380px;
+}
+
+header ul {
+    line-height: 28px; 
+}
+header li {
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin-right: 45px;
+}
+
+#login {
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+#login button {
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* main */
+main section {
+    /* debug */
+    background-color: red;
+    height: 300px;
+}
+
+
+/* footer */
+footer {
+    /* debug */
+    background-color: yellow;
+    height: 200px;
+}
