@@ -9,16 +9,29 @@ body {
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 12px 17px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+}
+
+
 /* header */
 header {
     height: 66vh;
-    margin-bottom: 20px;
     position: relative;
+    color: white;
 }
 
 header section {
     position: relative;
     width: 70%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -44,23 +57,22 @@ header section {
 header nav {
     position: absolute;
     top: 25px;
-    left: 0%;
-    transform: translate(50%, 0%);
+    left: calc(25% - 30px);
 }
 
 header ul {
     line-height: 28px; 
 }
+
 header li {
     display: inline-block;
 }
 
-header a {
-    text-decoration: none;
+header nav ul li a {
     font-weight: bold;
-    color: white;
     font-size: 20px;
     margin: 0 20px;
+    color: white;
 }
 
 #login {
@@ -69,19 +81,57 @@ header a {
     right: 0;
 }
 
-#login button {
+#login a {
     line-height: 28px;
     font-size: 18px;
     font-weight: bold;
-    background-color: white;
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
 }
 
+#header-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+header h1 {
+    text-align: center;
+    font-size: 66px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
 
+header p {
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    width: 56%;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+
+#header-buttons{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header-buttons .button {
+    font-size: 20px;
+}
+
+.button-broswer-app-link {
+    color: white;
+    background-color: #23272A;
+}
+
+.fa-long-arrow-alt-down {
+    margin-right: 10px;
+}
 
 
 /* main */
