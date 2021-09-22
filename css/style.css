@@ -44,7 +44,8 @@ header section {
 header nav {
     position: absolute;
     top: 25px;
-    left: 380px;
+    left: 0%;
+    transform: translate(50%, 0%);
 }
 
 header ul {
@@ -59,7 +60,7 @@ header a {
     font-weight: bold;
     color: white;
     font-size: 20px;
-    margin-right: 45px;
+    margin: 0 20px;
 }
 
 #login {
