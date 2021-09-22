@@ -9,6 +9,18 @@ body {
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+.cf::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+section {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -19,45 +31,27 @@ a {
     color: black;
     background-color: white;
 }
-
+ 
 
 /* header */
 header {
     height: 66vh;
-    position: relative;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
     color: white;
 }
 
-header section {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
+#header-top {
+    padding-top: 20px;
 }
-
-#jumbotron {
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 
 #logo-header {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    cursor: pointer;
+    float: left;
 }
 
-header nav {
-    position: absolute;
-    top: 25px;
-    left: calc(25% - 30px);
+ header nav {
+    float: left;
+    margin: 0 195px;
 }
 
 header ul {
@@ -76,9 +70,7 @@ header nav ul li a {
 }
 
 #login {
-    position: absolute;
-    top: 25px;
-    right: 0;
+    float: right;
 }
 
 #login a {
@@ -87,41 +79,32 @@ header nav ul li a {
     font-weight: bold;
 }
 
-#header-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
+ #header-bottom {
+    float: left;
+    margin: 60px 0px 0px 297px;
 }
 
 header h1 {
-    text-align: center;
     font-size: 66px;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-    width: 100%;
 }
+
+
 
 header p {
     font-size: 20px;
     line-height: 30px;
-    position: absolute;
-    width: 56%;
-    left: 50%;
-    top: 48%;
-    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    text-align: center;
+    width: 66%;
 }
 
 #header-buttons{
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 41px 0px 0px 70px;
 }
 
 #header-buttons .button {
-    font-size: 20px;
+    font-size: 24px;
+    margin: 0 10px;
 }
 
 .button-broswer-app-link {
@@ -131,15 +114,48 @@ header p {
 
 .fa-long-arrow-alt-down {
     margin-right: 10px;
-}
+} 
+
 
 
 /* main */
 main section {
-    /* debug */
-    background-color: red;
-    height: 300px;
+    height: 66vh;
+    border: 1px solid black;
 }
+
+
+#img-sezione1 {
+    float: left;
+    margin-top: 100px;
+}
+
+#text-sezione1 {
+    float: right;
+    width: 22%;
+    margin-top: 130px;
+}
+
+.titolo-sezioni {
+    font-size: 40px;
+}
+
+.text-sezioni {
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+#text-sezione2 {
+    float: left;
+    width: 22%;
+    margin-top: 130px;
+}
+
+#img-sezione2 {
+    float: right;
+    margin-top: 100px;
+}
+
 
 
 /* footer */
